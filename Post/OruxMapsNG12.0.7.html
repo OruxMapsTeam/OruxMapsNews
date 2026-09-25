@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OruxMaps NG - Updating 12.0.7</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f1f1f;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        figure {
+            margin: 20px 0;
+            text-align: center;
+        }
+        figcaption {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 6px;
+        }
+        hr.wp-block-separator {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 40px 0;
+        }
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .wp-block-embed {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .wp-block-embed iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            height: auto;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- wp:image {"sizeSlug":"large","align":"center"} -->
+    <figure class="wp-block-image aligncenter size-large"><img src="https://raw.githubusercontent.com/OruxMapsTeam/OruxMapsNews/refs/heads/main/media/louncher/Head.JPG" alt=""/><figcaption class="wp-element-caption"><strong><mark style="background-color:rgba(0, 0, 0, 0);color:#cf2e2e" class="has-inline-color has-vivid-red-color">Updating 12.0.7</mark></strong></figcaption></figure>
+    <!-- /wp:image -->
+
+    <!-- wp:paragraph -->
+    <p>The <strong>OruxMaps NG</strong> <strong>12.0.7</strong> version is now available. A new step forward in the development of the application with which we continue to fine-tune performance, fix minor details, and improve the overall experience in your outdoor activities.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p>Let's see what news this version brings us…</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p><strong>Libraries and Integrations</strong></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><strong>Mapsforge 0.30 Update:</strong> We have updated the cartographic engine by integrating version 0.30 of the Mapsforge libraries and its VTM graphic manager. This provides a more solid and optimized technical base to make the most of current device resources.</li>
+        <!-- /wp:list-item -->
+        <!-- wp:list-item -->
+        <li><strong>Point of Interest (POI) searches up to 4 times faster:</strong> One of the key highlights of this release is compatibility with Mapsforge v4 format databases. If you use them regularly, you will experience a remarkable increase in processing speed. Queries for locations, peaks, springs, or refuges now execute up to four times faster, streamlining the location of reference points during navigation.</li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><a href="https://download.mapsforge.org/pois/v4/">Mapsforge v4 POIs Repository</a></li>
+        <!-- /wp:list-item -->
+        <!-- wp:list-item -->
+        <li><a href="https://ftp.gwdg.de/pub/misc/openstreetmap/openandromaps/pois/mapsforge_V4/">OpenAndroMaps v4 POIs Repository</a></li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:paragraph -->
+    <p><strong>Performance Comparison (v3 vs. v4):</strong><br />Here is a short video comparison so you can see the performance improvements between both versions:</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:embed -->
+    <div class="wp-block-embed">
+        <iframe src="https://www.youtube.com/embed/hHjyOB4_EVo" allowfullscreen></iframe>
+    </div>
+    <!-- /wp:embed -->
+
+    <!-- wp:separator -->
+    <hr class="wp-block-separator has-alpha-channel-opacity"/>
+    <!-- /wp:separator -->
+
+    <!-- wp:paragraph -->
+    <p><strong>Routing and Navigation</strong></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><strong>Forward directional arrows on active routes:</strong> A new option to display directional arrows directly on the active track, clearly indicating the heading and the next section of the path. This feature directly addresses feedback from users regarding the difficulty of following a track when the route overlaps with itself one or more times along the journey. You can easily enable it from the app menu under <strong>Settings &gt; User interface &gt; Tracks/routes/lines/font sizes,… &gt; Paint forward arrows</strong>.</li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:image {"sizeSlug":"large"} -->
+    <figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/OruxMapsTeam/OruxMapsNews/refs/heads/main/media/NG12.0.6/Data-rout.JPG" alt=""/></figure>
+    <!-- /wp:image -->
+
+    <!-- wp:paragraph -->
+    <p>Additionally, the display and spacing of these directional arrows automatically adjust based on your current zoom level and movement speed, ensuring they remain clean and uncluttered on your screen regardless of how fast or slow you are traveling.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p>More data for your tracks:</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><strong>Geoid/ellipsoid height difference per track point:</strong> Added the option to record the difference between the geoid and ellipsoid for each track point (calculated as geoid altitude minus ellipsoidal altitude). This provides high-precision data for advanced altimetric analysis.</li>
+        <!-- /wp:list-item -->
+        <!-- wp:list-item -->
+        <li><strong>GPS fix quality per track point:</strong> Added the capability to record the detailed signal correction status for each point along the track. This allows you to precisely identify the positioning method used across the various available categories: <em>Invalid, GPS, DGPS, PPS, IRTK, FRTK, Estimated, Manual, Simulation, and WAAS</em>.</li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:separator -->
+    <hr class="wp-block-separator has-alpha-channel-opacity"/>
+    <!-- /wp:separator -->
+
+    <!-- wp:paragraph -->
+    <p><strong>Sensors and Beacons</strong></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><strong>Support for new environmental sensors:</strong> Compatibility has been added for new sensor hardware, including Bluemaestro Tempo Disc or Disco Maxi 4 in 1 (the successor to Tempo Disc) and RuuviTag sensors, designed for monitoring variables such as temperature, humidity, and barometric pressure. You can easily manage them from the app menu under <strong>Settings &gt; Sensors &gt; Beacons</strong>.</li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:separator -->
+    <hr class="wp-block-separator has-alpha-channel-opacity"/>
+    <!-- /wp:separator -->
+
+    <!-- wp:paragraph -->
+    <p><strong>Maps and Offline Management</strong></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:html -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin: 20px 0;">
+      <figure style="margin:0;flex:1 1 calc(50% - 12px);">
+        <img src="https://raw.githubusercontent.com/OruxMapsTeam/OruxMapsNews/refs/heads/main/media/NG12.0.6/add-map1.jpeg" alt="" style="width:100%;height:auto;border-radius:4px;">
+        <figcaption style="text-align:center;margin-top:4px;font-size:13px;color:#64748b;">Add new Maps </figcaption>
+      </figure>
+      <figure style="margin:0;flex:1 1 calc(50% - 12px);">
+        <img src="https://raw.githubusercontent.com/OruxMapsTeam/OruxMapsNews/refs/heads/main/media/NG12.0.6/add-map2.jpeg" alt="" style="width:100%;height:auto;border-radius:4px;">
+        <figcaption style="text-align:center;margin-top:4px;font-size:13px;color:#64748b;">Import Map</figcaption>
+      </figure>
+    </div>
+    <!-- /wp:html -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><strong>Redesigned map import and management:</strong> We have completely revamped the workflow for adding maps to the application to simplify the process and make it more intuitive for new users, allowing you to complete the entire task without leaving OruxMaps NG. You now have two distinct methods under the <em>Add offline maps and themes</em> section:</li>
+        <!-- /wp:list-item -->
+        <!-- wp:list-item -->
+        <li><strong>1. Add folder (Existing function):</strong> This option allows you to link an existing external folder on your device where you have stored compatible maps (such as <strong>.map</strong> and <strong>.geopdf</strong> formats) along with Mapsforge styles. When using this function, the files are not moved or duplicated; they are simply made available to the app from their original location.</li>
+        <!-- /wp:list-item -->
+        <!-- wp:list-item -->
+        <li><strong>2. Import (New function):</strong> Selecting this option opens a native file picker that allows you to choose any compatible map file and copy it directly into the application's internal <strong>mapsfiles</strong> folder with a single tap.</li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:separator -->
+    <hr class="wp-block-separator has-alpha-channel-opacity"/>
+    <!-- /wp:separator -->
+
+    <!-- wp:paragraph -->
+    <p><strong>Composite Map Management</strong></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:html -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <figure style="margin:0;flex:1 1 calc(50% - 12px);">
+        <img src="https://raw.githubusercontent.com/OruxMapsTeam/OruxMapsNews/refs/heads/main/media/NG12.0.6/composite1.jpeg" style="width:100%;height:auto;border-radius:4px;">
+        <figcaption style="text-align:center;margin-top:4px;">composite</figcaption>
+      </figure>
+      <figure style="margin:0;flex:1 1 calc(50% - 12px);">
+        <img src="https://raw.githubusercontent.com/OruxMapsTeam/OruxMapsNews/refs/heads/main/media/NG12.0.6/composite2.JPG" style="width:100%;height:auto;border-radius:4px;">
+        <figcaption style="text-align:center;margin-top:4px;">options</figcaption>
+      </figure>
+    </div>
+    <!-- /wp:html -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list">
+        <!-- wp:list-item -->
+        <li><strong>New management tools for composite maps:</strong> Aiming to provide a much smoother, more intuitive, and user-friendly experience directly from the interface, new advanced management options have been added for composite maps. You now have full control to <strong>Delete</strong>, <strong>Edit</strong>, and <strong>Create a copy</strong> of your existing configurations with just a few taps, simplifying the customization of your layers without unnecessary complications.</li>
+        <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
+</body>
+</html>
